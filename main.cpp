@@ -27,9 +27,8 @@ int main() {
     std::vector<double> timings;
     for (int i = 0; i < 1000000; i++) {
         double start = gethrtime();
-        std::vector<double> numbers;
-        for (int j = 0; j < 100; j++) {
-            numbers.push_back(generator());
+        for (int j = 0; j < 1000; j++) {
+            generator();
         }
         double end = gethrtime();
         timings.push_back(end - start);
