@@ -17,7 +17,7 @@ void to_xml(double result) {
     std::ofstream file(test_name);
     file << "<testsuites timestamp=\"2016-02-29T15:44:08\">\n";
     file << "  <testsuite name=\"no_op\">\n";
-    file << "    <testcase name=\"no_op" << "\" time=\"" << result/1e3 << "\" classname=\"no_op\"/>\n";
+    file << "    <testcase name=\"no_op" << "\" time=\"" << result/1e6 << "\" classname=\"no_op\"/>\n";
     file << "  </testsuite>\n";
     file << "</testsuites>\n";
 }
