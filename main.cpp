@@ -1,7 +1,6 @@
 #include <iostream>
 #include <random>
 #include <chrono>
-#include <sys/dtrace.h>
 #include <fstream>
 
 using namespace std;
