@@ -25,7 +25,7 @@ void to_xml(double result) {
 int main() {
     std::mt19937 generator (123);
     std::vector<double> timings;
-    for (int i = 0; i < 1000000; i++) {
+    for (int i = 0; i < 100000; i++) {
         std::vector<double> numbers;
         double start = gethrtime();
         for (int j = 0; j < 1000; j++) {
