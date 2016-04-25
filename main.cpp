@@ -3,6 +3,7 @@
 #include <chrono>
 #include <fstream>
 #include <algorithm>
+#include <unistd.h>
 
 using namespace std;
 
@@ -31,7 +32,7 @@ int main() {
         for (int j = 0; j < 1000; j++) {
             numbers.push_back(generator());
         }
-        sleep(0.1);
+        std::usleep(1000);
         double end = gethrtime();
         timings.push_back(end - start);
     }
