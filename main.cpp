@@ -32,7 +32,7 @@ int main() {
             numbers.push_back(generator());
         }
         double end = gethrtime();
-        timings.push_back((end - start) + 10000000);
+        timings.push_back(end - start);
     }
     sort(timings.begin(), timings.end());
     auto vector_size = timings.size();
