@@ -3,7 +3,6 @@
 #include <chrono>
 #include <fstream>
 #include <algorithm>
-#include <unistd.h>
 
 using namespace std;
 
@@ -32,9 +31,8 @@ int main() {
         for (int j = 0; j < 1000; j++) {
             numbers.push_back(generator());
         }
-        sleep(0.1);
         double end = gethrtime();
-        timings.push_back(end - start);
+        timings.push_back((end - start) + 10000000);
     }
     sort(timings.begin(), timings.end());
     auto vector_size = timings.size();
