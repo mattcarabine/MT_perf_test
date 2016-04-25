@@ -32,7 +32,7 @@ int main() {
         for (int j = 0; j < 1000; j++) {
             numbers.push_back(generator());
         }
-        std::usleep(1000);
+        sleep(0.1);
         double end = gethrtime();
         timings.push_back(end - start);
     }
